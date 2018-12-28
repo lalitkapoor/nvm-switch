@@ -12,7 +12,7 @@ class NvmAutoSwitch < Formula
     prefix.install "nvm-auto-switch.sh"
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<-EOS
     This will enable auto-switching of node versions specified by .nvmrc files.
     It will walk up the tree till it finds a .nvmrc file else it will use the
     version specified by the default alias in nvm.
